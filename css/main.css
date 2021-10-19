@@ -322,10 +322,10 @@ p, label {
     }
 
     #jl-home-presentation {
-        background-image: url('../images/screenshots/screenBlockRoom.png');
+        background-image: url('../images/screenshots/blockRoom_1.jpg');
         background-repeat: no-repeat;
-        background-position: 50% bottom;
-        background-size: contain;
+        background-position: 50% top;
+        background-size: cover;
         position: relative; /* div pai do jl-scroll-down*/
     }
 
@@ -538,7 +538,8 @@ p, label {
 
 /* CLASSES UTILITARIAS */
 
-/* fontes dos textos */
+/* fontes dos titulos */
+
 .jl-title {
     font-family: 'Abril Fatface', serif;
     font-weight: normal;
@@ -554,6 +555,10 @@ p, label {
 
 .jl-title-Small {
     font-size: 25px;
+}
+
+.jl-title-center {
+    text-align: center;
 }
 
 /* alinhamentos dos textos */
@@ -602,7 +607,7 @@ p, label {
 }
 
 .jl-bg-dark-transparent {
-    background-color: #4d4c4ca6;
+    background-color: #000000a6;
 }
 
 .jl-bg-light {
@@ -637,6 +642,8 @@ p, label {
 
 /* paddings */
 
+/* 15 */
+
 .jl-pad-15 {
     padding: 15px;
 }
@@ -655,6 +662,12 @@ p, label {
 
 .jl-pad-left-15 {
     padding-left: 15px;
+}
+
+/* 30 */
+
+.jl-pad-30 {
+    padding: 30px;
 }
 
 .jl-full-height {
@@ -680,4 +693,17 @@ p, label {
 /* Preloader */
 .jl-fade-out {
     animation: fadeOut 2s forwards ease-out;
+}
+
+/* Imagens */
+
+.jl-imag-size {
+    height: 150px;
+    width: auto;
+}
+
+/* Paineis do Index */
+
+.jl-panel-height {
+    height: 200px;
 }
