@@ -10,6 +10,16 @@ p, label {
     font-family: 'Opens Sans', sans-serif;
 }
 
+.lp-height-flex-100per{
+    height: 100%;
+    display: flex;
+}
+
+.lp-flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
 /* ANIMAÇÕES */
 
 @keyframes fadeOut {
@@ -70,6 +80,15 @@ p, label {
 }
 
 @media screen and (min-width: 320px){
+
+    .lp-title-size {
+        font-size: 30px;
+    }
+
+    .lp-text-size {
+        font-size: 25px;
+    } 
+
     /* --- estilo de topbar ---*/
     .jl-page-wrapper, .jl-preloader {
         width: 100%;
@@ -394,7 +413,9 @@ p, label {
 }
 
 @media screen and (min-width: 576px){
-    
+    .lp-title-size {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -402,6 +423,11 @@ p, label {
 }
 
 @media screen and (min-width: 992px){
+
+    .lp-title-size {
+        font-size: 60px;
+    }
+
     /* --- estilo de topbar ---*/
     .jl-menu {
         display: table;
@@ -414,7 +440,7 @@ p, label {
     .jl-menu a {
         font-family: 'Open Sans';
         font-size: 16px;
-        color: #bcbcbc;
+        color: #ffffff;
         text-decoration: none;
         text-transform: lowercase;
 
@@ -430,7 +456,7 @@ p, label {
     }
 
     .jl-menu a:hover {
-        color: #fff;
+        color: #cfcfcf;
     }
 
     .jl-menu a:before {
@@ -543,18 +569,6 @@ p, label {
 .jl-title {
     font-family: 'Abril Fatface', serif;
     font-weight: normal;
-}
-
-.jl-title-big {
-    font-size: 100px;
-}
-
-.jl-title-Medium {
-    font-size: 60px;
-}
-
-.jl-title-Small {
-    font-size: 25px;
 }
 
 .jl-title-center {
