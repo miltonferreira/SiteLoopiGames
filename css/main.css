@@ -16,8 +16,17 @@ p, label {
 }
 
 .lp-flex-center {
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.lp-flex-end {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lp-flex-dir-col {
+    flex-direction: column;
 }
 
 /* ANIMAÇÕES */
@@ -259,8 +268,6 @@ p, label {
         cursor: pointer;
     }
 
-    
-
     /* caixa de contatos fixo no canto inferior direito */
     .jl-contact-info {
 
@@ -353,7 +360,7 @@ p, label {
         width: 70px;
         height: 105px;
         border-radius: 35px 35px 0 0;
-        background-color: #2CCB69;
+        background-color: #2b47d4;
         display: block;
         
         /* faz centralizar no canto inferior */
@@ -395,7 +402,7 @@ p, label {
         content: '';
         width: 2px;
         height: 45px;
-        background-color: #000;
+        background-color: #fff;
 
         display: block;
 
@@ -408,6 +415,10 @@ p, label {
         /*Animação do corpo da seta*/
         animation: lineDown 1s ease-out infinite;
         transform-origin: top center;
+    }
+
+    .lp-panel-download a {
+        text-decoration: none;
     }
 
 }
@@ -537,6 +548,19 @@ p, label {
     padding: 0 35px;
     border-radius: 23px;
     font-size: 16px;
+}
+
+/* Cores dos botões */
+
+.jl-btn-white2blue {
+    background-color: #fff;
+    color: #1C1C1C;
+}
+
+.jl-btn-white2blue:hover {
+    background-color: #2b47d4;
+    color: #fff;
+    transform: scale(1.04);
 }
 
 .jl-btn-green {
@@ -706,7 +730,7 @@ p, label {
 
 /* Preloader */
 .jl-fade-out {
-    animation: fadeOut 2s forwards ease-out;
+    animation: fadeOut 1s forwards ease-out;
 }
 
 /* Imagens */

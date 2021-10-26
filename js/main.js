@@ -16,3 +16,15 @@ btnContact.addEventListener('click', function(){
     boxContact.classList.toggle('jl-is-open');  //indica pra mostra ou não caixa de contatos
     this.classList.toggle('jl-change-icon');
 });
+
+// Animação Elementos on Scroll com waypoints
+
+var myScrollDown = document.querySelector('.jl-scroll-down');
+
+var waypoint = new Waypoint({
+    element: myScrollDown,
+    handler: function() {
+        myScrollDown.classList.toggle('jl-fade-out');
+    },
+    offset: '80%'
+});
