@@ -355,6 +355,14 @@ p, label {
         position: relative; /* div pai do jl-scroll-down*/
     }
 
+    #jl-games-background-guardian {
+        background-image: url('../images/screenshots/guardianBird_1.png');
+        background-repeat: no-repeat;
+        background-position: 50% top;
+        background-size: cover;
+        position: relative; /* div pai do jl-scroll-down*/
+    }
+
     /*--- Scroll da Página ---*/
     .jl-scroll-down {
         width: 70px;
@@ -521,7 +529,10 @@ p, label {
     text-transform: lowercase;
 
     cursor: pointer;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+
+    width: 100%;
+    height: auto;
 }
 
 .jl-btn-block {
@@ -538,7 +549,7 @@ p, label {
 
 .jl-btn-medium {
     height: 38px;
-    padding: 0 27px;
+    
     border-radius: 19px;
     font-size: 14px;
 }
@@ -736,8 +747,13 @@ p, label {
 /* Imagens */
 
 .jl-imag-size {
-    height: 150px;
-    width: auto;
+    width: 150px;
+    height: auto;
+}
+
+.jl-imag-resize {
+    width: 100%;
+    height: auto;
 }
 
 /* Paineis do Index */
