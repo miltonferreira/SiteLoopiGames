@@ -10,6 +10,10 @@ p, label {
     font-family: 'Opens Sans', sans-serif;
 }
 
+.lp-dflex {
+    display: flex;
+}
+
 .lp-height-flex-100per{
     height: 100%;
     display: flex;
@@ -18,6 +22,10 @@ p, label {
 .lp-flex-center {
     justify-content: center;
     align-items: center;
+}
+
+.lp-justify-content-center {
+    justify-content: center;
 }
 
 .lp-flex-end {
@@ -90,50 +98,25 @@ p, label {
 
 @media screen and (min-width: 320px){
 
+    .lp-title-size-normal {
+        font-size: 30px;
+    }
+
     .lp-title-size {
         font-size: 30px;
     }
 
     .lp-text-size {
-        font-size: 25px;
+        font-size: 20px;
     } 
 
-    /* --- estilo de topbar ---*/
-    .jl-page-wrapper, .jl-preloader {
+    /* ---  ---*/
+    .jl-page-wrapper {
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         display: table;
         background-color: #1C1C1C;
         border: 30px solid #000;
-    }
-
-    .jl-preloader {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .jl-preloader-inner {
-        margin-top: -45px;
-    }
-
-    .jl-overlay {
-        width: 100%;
-        height: 100vh;
-        display: block;
-
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-
-        background-color: rgba(44, 203, 105, 0.95);
     }
 
     /*------------ Modal -------------*/
@@ -159,7 +142,7 @@ p, label {
 
     /*------------ Modal Header -------------*/
 
-    .jl-close-header, .jl-modal-body, .jl-form {
+    .jl-form {
         width: 100%;
         display: table;
         position: relative; /**/
@@ -193,7 +176,7 @@ p, label {
 
     .jl-field, .jl-textarea {
         width: 100%;
-        background-color: #2f2f2f;
+        background-color: #666666;
         border-radius: 4px;
         color: #fff;
         border: none;
@@ -209,7 +192,7 @@ p, label {
 
     .jl-topbar {
         width: 100%;
-        height: 110px;
+        height: 90px;
         display: block;
         background-color: #00000041;
         /* --- fica fixado no topo --- */
@@ -347,7 +330,7 @@ p, label {
         margin-top: 10%;
     }
 
-    #jl-home-presentation {
+    #lp-bg-home {
         background-image: url('../images/screenshots/blockRoom_1.jpg');
         background-repeat: no-repeat;
         background-position: 50% top;
@@ -355,7 +338,15 @@ p, label {
         position: relative; /* div pai do jl-scroll-down*/
     }
 
-    #jl-games-background-guardian {
+    #lp-bg-game-block {
+        background-image: url('../images/screenshots/blockRoom_1.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% top;
+        background-size: cover;
+        position: relative; /* div pai do jl-scroll-down*/
+    }
+
+    #lp-bg-game-guardian {
         background-image: url('../images/screenshots/guardianBird_1.png');
         background-repeat: no-repeat;
         background-position: 50% top;
@@ -512,6 +503,19 @@ p, label {
     
 }
 
+/* Rodapé do site */
+
+.lp-footer {
+    background-color: #e8ebed;
+}
+
+.lp-footer p {
+    text-align: center;
+    line-height: 50px;
+    font-size: 13px;
+    color: rgb(64 57 81 / 63%);
+  }
+
 /* Botões */
 
 .jl-btn {
@@ -580,7 +584,18 @@ p, label {
 }
 
 .jl-btn-green:hover {
-    background-color: rgb(6, 135, 55);
+    background-color: rgb(25, 6, 135);
+    color: #fff;
+    transform: scale(1.03);
+}
+
+.lp-btn-blue {
+    background-color: #2b47d4;
+    color: #bcbcbc;
+}
+
+.lp-btn-blue:hover {
+    background-color: rgb(25, 6, 135);
     color: #fff;
     transform: scale(1.03);
 }
@@ -677,6 +692,14 @@ p, label {
     margin-top: 15px;
 }
 
+.jl-mar-top-30 {
+    margin-top: 30px;
+}
+
+.lp-mar-top-80 {
+    margin-top: 80px;
+}
+
 .jl-mar-right-15 {
     margin-right: 15px;
 }
@@ -699,6 +722,10 @@ p, label {
 
 .jl-pad-top-15 {
     padding-top: 15px;
+}
+
+.jl-pad-top-30 {
+    padding-top: 30px;
 }
 
 .jl-pad-right-15 {
@@ -747,7 +774,7 @@ p, label {
 /* Imagens */
 
 .jl-imag-size {
-    width: 150px;
+    width: 80px;
     height: auto;
 }
 

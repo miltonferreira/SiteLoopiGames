@@ -18,7 +18,6 @@ btnContact.addEventListener('click', function(){
 });
 
 // Animação Elementos on Scroll com waypoints
-
 var myScrollDown = document.querySelector('.jl-scroll-down');
 
 var waypoint = new Waypoint({
@@ -26,5 +25,5 @@ var waypoint = new Waypoint({
     handler: function() {
         myScrollDown.classList.toggle('jl-fade-out');
     },
-    offset: '80%'
+    offset: '70%'
 });

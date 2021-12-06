@@ -9,17 +9,19 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <title>Loopi Games</title>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <!-- conteudo de topbar -->
     <header class="jl-topbar">
         <div class="jl-logo">
             <img src="images/logoloopigames.png" alt="Logo do site João Lemon"/>
         </div>
         <nav class="jl-menu">
-            <a href="index.html">Home</a>
-            <a href="games.html">Games</a>
+            <a href="#" class="nav-item" id="home-menu">Home</a>
+            <a href="#" class="nav-item" id="games-menu">Games</a>
             <a href="https://www.udemy.com/course/jogos-2d-com-unity-5-fundamentos-para-criar-um-jogo-2d" target="_blank">Udemy</a>
             <a href="https://www.youtube.com/c/LoopiGames" target="_blank">Youtube</a>
         </nav>
@@ -46,41 +48,111 @@
     <button class="jl-btn-contact"></button>
     <!-- Corpo da página -->
     <div class="jl-page-wrapper">
-        <section id="jl-home-presentation" class="jl-full-height jl-first-section">
+        <section id="lp-bg-home" class="jl-full-height jl-first-section">
             <div class="container-fluid lp-height-flex-100per">
-                <div class="row lp-flex-center">
+                <div class="row lp-mar-top-80 jl-pad-top-15 lp-justify-content-center">
                     <div class="col-sm-6 col-md-5 ">
-                        <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Bem-Vindo!</h1>
+                        <div class="row lp-flex-center">
+                            <img class="jl-imag-size jl-mar-right-15" src="images/Paises/Brasil.png" alt="Bandeira do Brasil">
+                            <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Bem-Vindo!</h1>
+                        </div>
                         <p class="jl-text-white lp-text-size jl-bg-dark-transparent jl-text-align-center jl-pad-30">
                             Aqui você encontra informações sobre os games produzidos e outras que estão em desenvolvimentos.
                             Além das aulas em Unity3D voltado a desenvolvimento de games.
                         </p>
-                        <!-- <button class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15">Solicite um orçamento</button> -->
-                        <img class="jl-imag-size rounded mx-auto d-block" src="images/Paises/Brasil.png" alt="Bandeira do Brasil">
-                    </div>
-                    <div class="col-md-auto">
-                        <!-- Espaço entre os paineis -->
                     </div>
                     <div class="col-sm-6 col-md-5">
-                        <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Welcome!</h1>
+                        <div class="row lp-flex-center">
+                            <img class="jl-imag-size jl-mar-right-15" src="images/Paises/EUA.png" alt="Bandeira dos EUA">
+                            <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Welcome!</h1>
+                        </div>
                         <p class="jl-text-white lp-text-size jl-bg-dark-transparent jl-text-align-center jl-pad-30">
                             Here you will find information about the games produced and others that are under development.
                         </p>
-                        <!-- <button class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15">Solicite um orçamento</button> -->
-                        <img class="jl-imag-size rounded mx-auto d-block" src="images/Paises/EUA.png" alt="Bandeira do Brasil">
+                    </div>
+                    <!-- newsletter -->
+                    <div class="col-sm-12 lp-dflex lp-flex-center jl-mar-top-15">
+                        <div class="col-sm-4 jl-bg-dark-transparent">
+                            <p class="jl-title jl-title-center jl-text-white lp-title-size-normal jl-pad-top-15 jl-pad-bottom-15">Receba noticias pelo E-mail</p>
+                            <form class="jl-form">
+                                <div class="row lp-justify-content-center">
+                                    <div class="jl-mar-bottom-15">
+                                        <label for="Email" class="jl-text-light">Email</label>
+                                        <input id="jl-email" class="jl-field" type="email" name="Email"/>
+                                    </div>
+                                    <div class="jl-mar-left-15" style="margin-top: 27px;">
+                                        <button class="jl-btn jl-btn-large lp-btn-blue jl-btn-block">Enviar</button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="jl-scroll-down">
+        </section>
+        <section id="lp-bg-game-block" class="jl-full-height jl-first-section">
+            <div class="container-fluid lp-height-flex-100per ">
+                <div class="row text-deco-none lp-flex-center">
+                    <div class="col-sm-2 col-md-2 lp-panel-download">
+                        <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Itch.io</h2>
+                        <img class="jl-imag-resize rounded mx-auto d-block" src="images/logos/logo-itchIO.png" alt="logo it">
+                        <a href="https://loopigames.itch.io/block-room" target="_blank">
+                            <button class="jl-btn jl-btn-medium jl-btn-white2blue jl-mar-top-15">Download</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 lp-height-flex-100per lp-flex-center">
+                        <iframe width="660" height="415" src="https://www.youtube.com/embed/Umn28PqL_UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-2 col-md-2 lp-panel-download">
+                        <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Google Play</h2>
+                        <img class="jl-imag-resize rounded mx-auto d-block" src="images/logos/logo-play-store.png" alt="Bandeira do Brasil">
+                        <a href="https://play.google.com/store/apps/details?id=com.LoopiGames.BlockRoom" target="_blank">
+                            <button class="jl-btn jl-btn-medium jl-btn-white2blue jl-mar-top-15">Download</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="jl-scroll-down">
                 <div class="jl-arrow-down">
                     <img src="images/arrow-down.svg" alt="Scroll da página">
                 </div>
-            </div> -->
+            </div>
         </section>
-        <!-- <section class="jl-full-height">
-            
-        </section> -->
+        <section id="lp-bg-game-guardian" class="jl-full-height jl-first-section">
+            <div class="container-fluid lp-height-flex-100per lp-flex-center">
+                <div class="row text-deco-none lp-flex-center">
+                    <div class="col-sm-3 col-md-3 lp-panel-download">
+                        <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Itch.io</h2>
+                        <img class="jl-imag-resize rounded mx-auto d-block" src="images/logos/logo-itchIO.png" alt="logo it">
+                        <a href="https://loopigames.itch.io/guardian-bird" target="_blank">
+                            <button class="jl-btn jl-btn-medium jl-btn-white2blue jl-mar-top-15">Download</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-md-8 lp-height-flex-100per">
+                        <iframe width="660" height="415" src="https://www.youtube.com/embed/rzS32Mw7Vvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="js/main.js"></script>
+    <footer class="lp-footer container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>O site LoopiGames é focado em mostrar jogos e iniciativas para o mercado de games brasileiro. Entre em contato, caso tenha alguma proposta.</p>
+            </div>
+            <div class="col-sm-12" style="background-color: #dbdee0">
+                <hr>
+                <p>Todos os direitos reservados - 2021</p>
+            </div>
+        </div>
+    </footer>
+    <!-- sistema de waypoints para scroll: http://imakewebthings.com/waypoints/ | https://cdnjs.com/libraries/waypoints/4.0.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <!-- sistema de scroll quando clicar no link home e games -->
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
