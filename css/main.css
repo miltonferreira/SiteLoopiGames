@@ -99,7 +99,7 @@ p, label {
 @media screen and (min-width: 320px){
 
     .lp-title-size-normal {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .lp-title-size {
@@ -176,7 +176,7 @@ p, label {
 
     .jl-field, .jl-textarea {
         width: 100%;
-        background-color: #666666;
+        background-color: #808080;
         border-radius: 4px;
         color: #fff;
         border: none;
@@ -188,6 +188,12 @@ p, label {
 
     .jl-field {
         height: 45px;
+    }
+
+    .lp-empty-field {
+        border: 2px solid #FF0000;
+        background-color: #bcbcbc;
+        outline: none;
     }
 
     .jl-topbar {
@@ -328,6 +334,15 @@ p, label {
     /*--- HOME ---*/
     .jl-display-text {
         margin-top: 10%;
+    }
+
+    /* -- Backgrounds --*/
+    .lp-bg-white {
+        background-color: #e8ebed;
+    }
+    
+    .lp-bg-light {
+        background-color: #dbdee0;
     }
 
     #lp-bg-home {
@@ -504,10 +519,6 @@ p, label {
 }
 
 /* Rodapé do site */
-
-.lp-footer {
-    background-color: #e8ebed;
-}
 
 .lp-footer p {
     text-align: center;
@@ -756,6 +767,11 @@ p, label {
     height: calc(100vh - 30px);
 }
 
+.lp-second-section {
+    /* FIX - subtrai 30px do vh */
+    height: calc(50vh - 30px);
+}
+
 /* CLASSES DE COMPORTAMENTOS */
 
 .jl-is-open {
@@ -787,4 +803,12 @@ p, label {
 
 .jl-panel-height {
     height: 200px;
+}
+
+
+/* Imagens de explicação*/
+
+.card-img img {
+    width: 45%;
+    height: auto;
 }

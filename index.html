@@ -56,7 +56,7 @@
                             <img class="jl-imag-size jl-mar-right-15" src="images/Paises/Brasil.png" alt="Bandeira do Brasil">
                             <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Bem-Vindo!</h1>
                         </div>
-                        <p class="jl-text-white lp-text-size jl-bg-dark-transparent jl-text-align-center jl-pad-30">
+                        <p class="jl-text-light lp-text-size jl-bg-dark-transparent jl-text-align-center jl-pad-30">
                             Aqui você encontra informações sobre os games produzidos e outras que estão em desenvolvimentos.
                             Além das aulas em Unity3D voltado a desenvolvimento de games.
                         </p>
@@ -66,26 +66,26 @@
                             <img class="jl-imag-size jl-mar-right-15" src="images/Paises/EUA.png" alt="Bandeira dos EUA">
                             <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Welcome!</h1>
                         </div>
-                        <p class="jl-text-white lp-text-size jl-bg-dark-transparent jl-text-align-center jl-pad-30">
+                        <p class="jl-text-light lp-text-size jl-bg-dark-transparent jl-text-align-center jl-pad-30">
                             Here you will find information about the games produced and others that are under development.
                         </p>
                     </div>
                     <!-- newsletter -->
                     <div class="col-sm-12 lp-dflex lp-flex-center jl-mar-top-15">
                         <div class="col-sm-4 jl-bg-dark-transparent">
-                            <p class="jl-title jl-title-center jl-text-white lp-title-size-normal jl-pad-top-15 jl-pad-bottom-15">Receba noticias pelo E-mail</p>
-                            <form class="jl-form">
+                            <p class="lp-text-size jl-title-center jl-text-light jl-pad-top-15 jl-pad-bottom-15">Receba atualizações dos games por E-Mail</p>
+                            <div class="jl-form">
                                 <div class="row lp-justify-content-center">
                                     <div class="jl-mar-bottom-15">
                                         <label for="Email" class="jl-text-light">Email</label>
-                                        <input id="jl-email" class="jl-field" type="email" name="Email"/>
+                                        <input id="lp-input-email" class="jl-field" type="email" name="Email"/>
                                     </div>
                                     <div class="jl-mar-left-15" style="margin-top: 27px;">
-                                        <button class="jl-btn jl-btn-large lp-btn-blue jl-btn-block">Enviar</button>
+                                        <button id="lp-btn-email" class="jl-btn jl-btn-large lp-btn-blue jl-btn-block">Enviar</button>
                                     </div>
                                     
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,13 +113,38 @@
                     </div>
                 </div>
             </div>
-            <div class="jl-scroll-down">
+            <!-- <div class="jl-scroll-down">
                 <div class="jl-arrow-down">
                     <img src="images/arrow-down.svg" alt="Scroll da página">
                 </div>
+            </div> -->
+        </section>
+        <section class="lp-bg-light jl-pad-bottom-15">
+            <div class="container jl-pad-top-30">
+                <p class="lp-text-size jl-text-align-center"><span style="color: blueviolet;">Block Room</span> é um jogo que traz um 
+                    novo desafio e diversão em cada level, passe pelos perigos para coletar maçãs e liberar caminho
+                    para o próximo level. Baixe pelo <span style="color: #fa5c5c">Itch.io</span> ou <span style="color: #689f38">Google Play</span>
+                    e divirta-se!
+                </p>
+                <p class="lp-text-size jl-text-align-center jl-pad-top-30">
+                    <span style="color: crimson; font-weight: bold;">ATENÇÃO:</span> O game ainda está em desenvolvimento, muitas coisas 
+                        legais ainda serão adicionadas!
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card-img d-flex justify-content-around jl-mar-top-30">
+                        <img src="https://play-lh.googleusercontent.com/NnaSeFrAXhhT5KOIqBGWNYpWlPLMZjsm_fvncjRTuv6wvkN8fZBAZ2ym-xwH0K6x77zN=w720-h310-rw" alt="">
+                        <img src="https://play-lh.googleusercontent.com/imJoiFsptoxz7a7sJ_Lf5nP1NzwruMw9_wjAWdooWa_gSu55OTaYD7w3eM0MXfMD5JYd=w720-h310-rw" alt="">
+                    </div>
+                    <div class="card-img d-flex justify-content-around jl-mar-top-30">
+                        <img src="https://play-lh.googleusercontent.com/yfz6UttoYr1735Cryz3qqIkmR4f49SFUe_TjWVc2obvZuXjtSHiRp7bNMhE-Z07_L3Q=w720-h310-rw" alt="">
+                        <img src="https://play-lh.googleusercontent.com/djllbx8wRJ9H2cbsKqBI0OuZAiWIyPsGstMOt4CjIUEGNdGe6ismuoUm6DKEdQV4eeY=w720-h310-rw" alt="">
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="lp-bg-game-guardian" class="jl-full-height jl-first-section">
+        <section id="lp-bg-game-guardian" class="jl-full-height jl-first-section" style="display: none;">
             <div class="container-fluid lp-height-flex-100per lp-flex-center">
                 <div class="row text-deco-none lp-flex-center">
                     <div class="col-sm-3 col-md-3 lp-panel-download">
@@ -137,17 +162,22 @@
             </div>
         </section>
     </div>
-    <footer class="lp-footer container-fluid">
+    <footer class="lp-footer lp-bg-white container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <p>O site LoopiGames é focado em mostrar jogos e iniciativas para o mercado de games brasileiro. Entre em contato, caso tenha alguma proposta.</p>
             </div>
-            <div class="col-sm-12" style="background-color: #dbdee0">
+            <div class="col-sm-12 lp-bg-light">
                 <hr>
                 <p>Todos os direitos reservados - 2021</p>
             </div>
         </div>
     </footer>
+    <!-- Config Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="assets/js/firebaseConf.js"></script>
     <!-- sistema de waypoints para scroll: http://imakewebthings.com/waypoints/ | https://cdnjs.com/libraries/waypoints/4.0.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>

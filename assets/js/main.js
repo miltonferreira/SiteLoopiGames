@@ -1,14 +1,8 @@
 
-var btnContact = document.querySelector('.jl-btn-contact');     // botao toggle de abrir fecha caixa de contatos
+var firestore = firebase.firestore();
+let dbMovies = firestore.collection("SiteLoopiGames");
 
-// Page Preloader, quando carrega a página, tira o Preloader da frente
-window.addEventListener('load', function(){
-    var pagePreloader = document.querySelector('.jl-preloader');
-    pagePreloader.classList.add('jl-fade-out');
-    setTimeout(function(){
-        pagePreloader.style.display = 'none';
-    }, 2000);
-});
+var btnContact = document.querySelector('.jl-btn-contact');     // botao toggle de abrir fecha caixa de contatos
 
 // Abrindo e Fechando Informações de Contatos
 btnContact.addEventListener('click', function(){
@@ -27,3 +21,84 @@ var waypoint = new Waypoint({
     },
     offset: '70%'
 });
+
+// sistema de enviar email para o firebase
+var btnEmail = document.querySelector('#lp-btn-email');             // botao de enviar email
+
+// Pega email inserido
+let inputEmail = document.querySelector('#lp-input-email');         // input do email
+
+btnEmail.addEventListener('click', function(){
+    saveEmailinGames(inputEmail);    // recebe o valor do campo de Input
+});
+
+// salva o filme no firebase ----------------------------------------
+function saveEmailinGames(inputEmail){
+
+    if(inputEmail.value == ""){
+        inputEmail.classList.add('lp-empty-field');
+        alert("Insira um email para receber as atualizações dos games!");
+        return;
+    }
+
+    var myTimestamp = firebase.firestore.Timestamp.fromDate(new Date());
+
+    var data = {
+        added: myTimestamp,
+        email: inputEmail.value,
+        type: 'Games',
+    };
+    
+    // salva o filme no firebase
+    dbMovies.add(data).then(()=>{
+
+        inputEmail.classList.remove('lp-empty-field');
+        alert("Seu email foi recebido com sucesso!");
+        clearForm();                            // limpa formulario
+        
+    }).catch((error)=>{
+        console.log(error);
+        alert(error);
+    });
+
+}
+
+function saveEmailinUdemy(inputEmail){
+
+    if(inputEmail.value == ""){
+        inputEmail.classList.add('lp-empty-field');
+        alert("Insira um email para receber informações sobre cursos!");
+        return;
+    }
+
+    var myTimestamp = firebase.firestore.Timestamp.fromDate(new Date());
+
+    var data = {
+        added: myTimestamp,
+        email: inputEmail.value,
+        type: 'Udemy',
+    };
+    
+    // salva o filme no firebase
+    dbMovies.add(data).then(()=>{
+
+        inputEmail.classList.remove('lp-empty-field');
+        alert("Seu email foi recebido com sucesso!");
+        clearForm();                            // limpa formulario
+        
+    }).catch((error)=>{
+        console.log(error);
+        alert(error);
+    });
+
+}
+
+// limpa os campos do formulario ---------------------------------------------
+function clearForm(){
+    inputEmail.value = "";
+}
+
+// retorna o tempo -------------------------------------------------------------------------------
+function updateTime(){
+    return Math.floor(new Date().getTime()/1000.0); 
+}
