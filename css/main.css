@@ -715,8 +715,12 @@ p, label {
     margin-right: 15px;
 }
 
-.jl-mar-bottom-15 {
+.lp-mar-bottom-15 {
     margin-bottom: 15px;
+}
+
+.lp-mar-bottom-30 {
+    margin-bottom: 30px;
 }
 
 .jl-mar-left-15 {
@@ -806,9 +810,9 @@ p, label {
 }
 
 
-/* Imagens de explicação*/
+/* Imagens de explicação */
 
-.card-img img {
-    width: 45%;
+.card-imag {
+    width: 90%;
     height: auto;
 }

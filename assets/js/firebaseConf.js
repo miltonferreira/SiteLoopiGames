@@ -1,13 +1,12 @@
 function connectFirebase() {
     var firebaseConfig = {
-        apiKey: "AIzaSyCdyMwPh9vAQ1Oj93OobcAAF9JYGJOkOW0",
-        authDomain: "filse-533c0.firebaseapp.com",
-        databaseURL: "https://filse-533c0.firebaseio.com",
-        projectId: "filse-533c0",
-        storageBucket: "filse-533c0.appspot.com",
-        messagingSenderId: "217598975561",
-        appId: "1:217598975561:web:ed9980eff403eb84f06998",
-        measurementId: "G-V2QWDX81FG"
+        apiKey: "AIzaSyCZ401Mf4SoCW7uVr-42bPzI_O5EStFIAg",
+        authDomain: "loopigames-1c4a2.firebaseapp.com",
+        projectId: "loopigames-1c4a2",
+        storageBucket: "loopigames-1c4a2.appspot.com",
+        messagingSenderId: "1051784016063",
+        appId: "1:1051784016063:web:1b11a6fcae08764c91d60a",
+        measurementId: "G-CGRV3KHM2K"
     };
 
     firebase.initializeApp(firebaseConfig);

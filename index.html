@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,400i,700,700i,800,800i&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logos/favicon-loopigames.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/galery.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <title>Loopi Games</title>
 
@@ -46,12 +47,19 @@
         <div class="jl-corner"></div>
     </div>
     <button class="jl-btn-contact"></button>
+    <!--Modal da galeria de imagens -->
+    <div class="modal">
+        <div class="modal_content">
+            <img src="imagens/01.jpg" alt="" id="modal_img">
+        </div>
+        <span id="btn_close">&times;</span>
+    </div>
     <!-- Corpo da página -->
     <div class="jl-page-wrapper">
         <section id="lp-bg-home" class="jl-full-height jl-first-section">
             <div class="container-fluid lp-height-flex-100per">
                 <div class="row lp-mar-top-80 jl-pad-top-15 lp-justify-content-center">
-                    <div class="col-sm-6 col-md-5 ">
+                    <div class="col-sm-6 col-md-5">
                         <div class="row lp-flex-center">
                             <img class="jl-imag-size jl-mar-right-15" src="images/Paises/Brasil.png" alt="Bandeira do Brasil">
                             <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Bem-Vindo!</h1>
@@ -76,7 +84,7 @@
                             <p class="lp-text-size jl-title-center jl-text-light jl-pad-top-15 jl-pad-bottom-15">Receba atualizações dos games por E-Mail</p>
                             <div class="jl-form">
                                 <div class="row lp-justify-content-center">
-                                    <div class="jl-mar-bottom-15">
+                                    <div class="lp-mar-bottom-15">
                                         <label for="Email" class="jl-text-light">Email</label>
                                         <input id="lp-input-email" class="jl-field" type="email" name="Email"/>
                                     </div>
@@ -92,7 +100,7 @@
             </div>
         </section>
         <section id="lp-bg-game-block" class="jl-full-height jl-first-section">
-            <div class="container-fluid lp-height-flex-100per ">
+            <div class="container-fluid lp-height-flex-100per">
                 <div class="row text-deco-none lp-flex-center">
                     <div class="col-sm-2 col-md-2 lp-panel-download">
                         <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Itch.io</h2>
@@ -113,14 +121,14 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="jl-scroll-down">
+            <div class="jl-scroll-down">
                 <div class="jl-arrow-down">
                     <img src="images/arrow-down.svg" alt="Scroll da página">
                 </div>
-            </div> -->
+            </div>
         </section>
         <section class="lp-bg-light jl-pad-bottom-15">
-            <div class="container jl-pad-top-30">
+            <div class="container jl-pad-top-30 lp-mar-bottom-30">
                 <p class="lp-text-size jl-text-align-center"><span style="color: blueviolet;">Block Room</span> é um jogo que traz um 
                     novo desafio e diversão em cada level, passe pelos perigos para coletar maçãs e liberar caminho
                     para o próximo level. Baixe pelo <span style="color: #fa5c5c">Itch.io</span> ou <span style="color: #689f38">Google Play</span>
@@ -132,14 +140,18 @@
                 </p>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="card-img d-flex justify-content-around jl-mar-top-30">
-                        <img src="https://play-lh.googleusercontent.com/NnaSeFrAXhhT5KOIqBGWNYpWlPLMZjsm_fvncjRTuv6wvkN8fZBAZ2ym-xwH0K6x77zN=w720-h310-rw" alt="">
-                        <img src="https://play-lh.googleusercontent.com/imJoiFsptoxz7a7sJ_Lf5nP1NzwruMw9_wjAWdooWa_gSu55OTaYD7w3eM0MXfMD5JYd=w720-h310-rw" alt="">
+                <div class="row lp-dflex lp-flex-center">
+                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                        <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_1.jpg" alt="">
                     </div>
-                    <div class="card-img d-flex justify-content-around jl-mar-top-30">
-                        <img src="https://play-lh.googleusercontent.com/yfz6UttoYr1735Cryz3qqIkmR4f49SFUe_TjWVc2obvZuXjtSHiRp7bNMhE-Z07_L3Q=w720-h310-rw" alt="">
-                        <img src="https://play-lh.googleusercontent.com/djllbx8wRJ9H2cbsKqBI0OuZAiWIyPsGstMOt4CjIUEGNdGe6ismuoUm6DKEdQV4eeY=w720-h310-rw" alt="">
+                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                        <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_3.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                        <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_2.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                        <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_5.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -183,6 +195,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
     <!-- sistema de scroll quando clicar no link home e games -->
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/galeria.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
