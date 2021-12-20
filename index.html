@@ -56,10 +56,10 @@
     </div>
     <!-- Corpo da página -->
     <div class="jl-page-wrapper">
-        <section id="lp-bg-home" class="jl-full-height jl-first-section">
-            <div class="container-fluid lp-height-flex-100per">
+        <section id="lp-bg-home">
+            <div class="container lp-dflex">
                 <div class="row lp-mar-top-80 jl-pad-top-15 lp-justify-content-center">
-                    <div class="col-sm-6 col-md-5">
+                    <div class="col-md-5">
                         <div class="row lp-flex-center">
                             <img class="jl-imag-size jl-mar-right-15" src="images/Paises/Brasil.png" alt="Bandeira do Brasil">
                             <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Bem-Vindo!</h1>
@@ -69,7 +69,7 @@
                             Além das aulas em Unity3D voltado a desenvolvimento de games.
                         </p>
                     </div>
-                    <div class="col-sm-6 col-md-5">
+                    <div class="col-md-5">
                         <div class="row lp-flex-center">
                             <img class="jl-imag-size jl-mar-right-15" src="images/Paises/EUA.png" alt="Bandeira dos EUA">
                             <h1 class="jl-title jl-title-center jl-text-white lp-title-size">Welcome!</h1>
@@ -79,8 +79,8 @@
                         </p>
                     </div>
                     <!-- newsletter -->
-                    <div class="col-sm-12 lp-dflex lp-flex-center jl-mar-top-15">
-                        <div class="col-sm-4 jl-bg-dark-transparent">
+                    <div class="col-md-12 lp-dflex lp-flex-center jl-mar-top-15">
+                        <div class="jl-bg-dark-transparent jl-pad-15">
                             <p class="lp-text-size jl-title-center jl-text-light jl-pad-top-15 jl-pad-bottom-15">Receba atualizações dos games por E-Mail</p>
                             <div class="jl-form">
                                 <div class="row lp-justify-content-center">
@@ -99,20 +99,21 @@
                 </div>
             </div>
         </section>
-        <section id="lp-bg-game-block" class="jl-full-height jl-first-section">
-            <div class="container-fluid lp-height-flex-100per">
+        <!-- <section id="lp-bg-game-block" class="lp-full-height-90"> -->
+        <section id="lp-bg-game-block">
+            <div style="padding-top: 50px;">
                 <div class="row text-deco-none lp-flex-center">
-                    <div class="col-sm-2 col-md-2 lp-panel-download">
+                    <div class="col-md-2 lp-panel-download jl-mar-top-30">
                         <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Itch.io</h2>
                         <img class="jl-imag-resize rounded mx-auto d-block" src="images/logos/logo-itchIO.png" alt="logo it">
                         <a href="https://loopigames.itch.io/block-room" target="_blank">
                             <button class="jl-btn jl-btn-medium jl-btn-white2blue jl-mar-top-15">Download</button>
                         </a>
                     </div>
-                    <div class="col-sm-6 col-md-6 lp-height-flex-100per lp-flex-center">
-                        <iframe width="660" height="415" src="https://www.youtube.com/embed/Umn28PqL_UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="col-md-6 lp-dflex lp-flex-center jl-mar-top-30">
+                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/pQ-61PUy3FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-sm-2 col-md-2 lp-panel-download">
+                    <div class="col-md-2 lp-panel-download jl-mar-top-30">
                         <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Google Play</h2>
                         <img class="jl-imag-resize rounded mx-auto d-block" src="images/logos/logo-play-store.png" alt="Bandeira do Brasil">
                         <a href="https://play.google.com/store/apps/details?id=com.LoopiGames.BlockRoom" target="_blank">
@@ -121,9 +122,11 @@
                     </div>
                 </div>
             </div>
-            <div class="jl-scroll-down">
-                <div class="jl-arrow-down">
-                    <img src="images/arrow-down.svg" alt="Scroll da página">
+            <div style="padding-top: 120px;">
+                <div class="jl-scroll-down">
+                    <div class="jl-arrow-down">
+                        <img src="images/arrow-down.svg" alt="Scroll da página">
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,46 +134,51 @@
             <div class="container jl-pad-top-30 lp-mar-bottom-30">
                 <p class="lp-text-size jl-text-align-center"><span style="color: blueviolet;">Block Room</span> é um jogo que traz um 
                     novo desafio e diversão em cada level, passe pelos perigos para coletar maçãs e liberar caminho
-                    para o próximo level. Baixe pelo <span style="color: #fa5c5c">Itch.io</span> ou <span style="color: #689f38">Google Play</span>
+                    para o próximo level. Baixe pelo <a style="text-decoration: none;" href="https://loopigames.itch.io/block-room" target="_blank"><span style="color: #fa5c5c">Itch.io</span></a> ou <a style="text-decoration: none;" href="https://play.google.com/store/apps/details?id=com.LoopiGames.BlockRoom" target="_blank"><span style="color: #689f38">Google Play</span></a>
                     e divirta-se!
                 </p>
                 <p class="lp-text-size jl-text-align-center jl-pad-top-30">
-                    <span style="color: crimson; font-weight: bold;">ATENÇÃO:</span> O game ainda está em desenvolvimento, muitas coisas 
+                    <span class="lp-text-alert">ATENÇÃO:</span> O game ainda está em desenvolvimento, muitas coisas 
                         legais ainda serão adicionadas!
                 </p>
             </div>
             <div class="container">
                 <div class="row lp-dflex lp-flex-center">
-                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                    <div class="col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
                         <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_1.jpg" alt="">
                     </div>
-                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                    <div class="col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
                         <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_3.jpg" alt="">
                     </div>
-                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                    <div class="col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
                         <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_2.jpg" alt="">
                     </div>
-                    <div class="col-sm-6 col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
+                    <div class="col-md-5 lp-mar-bottom-15 lp-dflex lp-flex-center">
                         <img class="card-imag small_img" src="images/screenshots//block-room-screens/inGame_5.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="lp-bg-game-guardian" class="jl-full-height jl-first-section" style="display: none;">
-            <div class="container-fluid lp-height-flex-100per lp-flex-center">
-                <div class="row text-deco-none lp-flex-center">
-                    <div class="col-sm-3 col-md-3 lp-panel-download">
-                        <h2 class="jl-title jl-title-center jl-text-white jl-pad-bottom-15">Itch.io</h2>
-                        <img class="jl-imag-resize rounded mx-auto d-block" src="images/logos/logo-itchIO.png" alt="logo it">
-                        <a href="https://loopigames.itch.io/guardian-bird" target="_blank">
-                            <button class="jl-btn jl-btn-medium jl-btn-white2blue jl-mar-top-15">Download</button>
-                        </a>
-                    </div>
-                    <div class="col-sm-8 col-md-8 lp-height-flex-100per">
-                        <iframe width="660" height="415" src="https://www.youtube.com/embed/rzS32Mw7Vvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
-                </div>
+        <section class="lp-bg-light jl-pad-bottom-15">
+            <div class="container">
+                <h1 class="jl-title jl-title-center jl-text-blue" style="font-size: 48px;">Sobre o Projeto Block Room</h1>
+                <p class="lp-text-size jl-text-align-center jl-pad-top-30">
+                    A ideia base do game já é antiga vem desde 2014, mas por limitações da época não foi totalmente realizada.
+                    Hoje essas limitações diminuiram bastante, muito pela possibilidade de acessar materiais para desenvolver o game.
+                </p>
+                <p class="lp-text-size jl-text-align-center jl-pad-top-15">
+                    A arte em pixel vem de 2 bundles free do artista <a style="text-decoration: none;" href="https://pixelfrog-assets.itch.io/" target="_blank"><span style="color: #fa5c5c">Pixel Frog</span></a>, futuramente queremos substituir por artes próprias.
+                </p>
+                <p class="lp-text-size jl-text-align-center jl-pad-top-15">
+                    A músicas também são 2 bundles free do artista <a style="text-decoration: none;" href="https://pixelfrog-assets.itch.io/" target="_blank"><span style="color: #fa5c5c">Pixel Frog</span></a>, terão substituidas por outras músicas, mas seguirá um
+                    estilo de media player, onde o jogador pode trocar as músicas que ouve enquanto joga. Atualmente é possivel pausar a música ou pular faixa, queremos seguir esse estilo, com várias músicas em 8 bits tocando no media player.
+                </p>
+                <p class="lp-text-size jl-text-align-center jl-pad-top-15">
+                    Existem outros assuntos relativos ao game, que serão apresentados assim que forem implmentados. Tudo está sendo pensado para aumentar a qualidade e trazer mais jogadores ao game.
+                </p>
+                <h2 class="jl-text-align-center lp-text-alert jl-pad-top-30 lp-mar-bottom-15">
+                    Assim que tiver novidades serão anunciados aqui. Fique no aguardo =)
+                </h2>
             </div>
         </section>
     </div>

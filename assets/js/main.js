@@ -14,13 +14,16 @@ btnContact.addEventListener('click', function(){
 // Animação Elementos on Scroll com waypoints
 var myScrollDown = document.querySelector('.jl-scroll-down');
 
-var waypoint = new Waypoint({
-    element: myScrollDown,
-    handler: function() {
-        myScrollDown.classList.toggle('jl-fade-out');
-    },
-    offset: '70%'
-});
+if(myScrollDown != null){
+    var waypoint = new Waypoint({
+        element: myScrollDown,
+        handler: function() {
+            myScrollDown.classList.toggle('jl-fade-out');
+        },
+        offset: '70%'
+    });
+}
+
 
 // sistema de enviar email para o firebase
 var btnEmail = document.querySelector('#lp-btn-email');             // botao de enviar email
@@ -46,7 +49,7 @@ function saveEmailinGames(inputEmail){
     var data = {
         added: myTimestamp,
         email: inputEmail.value,
-        type: 'Games',
+        type: 'News Games',
     };
     
     // salva o filme no firebase

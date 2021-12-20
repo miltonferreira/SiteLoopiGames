@@ -119,6 +119,11 @@ p, label {
         border: 30px solid #000;
     }
 
+    .lp-text-alert {
+        color: crimson; 
+        font-weight: bold;
+    }
+
     /*------------ Modal -------------*/
 
     .jl-modal {
@@ -435,16 +440,46 @@ p, label {
         text-decoration: none;
     }
 
+    .jl-btn-medium {
+        height: 38px;
+        width: 80%;
+        
+        border-radius: 19px;
+        font-size: 14px;
+    }
+
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 575px){
     .lp-title-size {
         font-size: 40px;
     }
+
+    .jl-imag-resize {
+        width: 65%;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 768px){
-    
+
+    .lp-title-size {
+        font-size: 30px;
+    }
+
+    .jl-imag-resize {
+        width: 100%;
+        height: auto;
+    }
+
+    .jl-btn-medium {
+        height: 38px;
+        width: 100%;
+        
+        border-radius: 19px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -546,8 +581,6 @@ p, label {
     cursor: pointer;
     margin: 0 auto;
 
-    width: 100%;
-    height: auto;
 }
 
 .jl-btn-block {
@@ -562,12 +595,6 @@ p, label {
     font-size: 11px;
 }
 
-.jl-btn-medium {
-    height: 38px;
-    
-    border-radius: 19px;
-    font-size: 14px;
-}
 
 .jl-btn-large {
     height: 45px;
@@ -640,6 +667,10 @@ p, label {
 
 .jl-text-align-center {
     text-align: center;
+}
+
+.lp-text-align-justify {
+    text-align: justify;
 }
 
 /* cor dos textos */
@@ -763,7 +794,10 @@ p, label {
 
 .jl-full-height {
     height: 100vh;
-    
+}
+
+.lp-full-height-90 {
+    height: 90vh;
 }
 
 .jl-first-section {
@@ -798,10 +832,7 @@ p, label {
     height: auto;
 }
 
-.jl-imag-resize {
-    width: 100%;
-    height: auto;
-}
+
 
 /* Paineis do Index */
 
